@@ -80,7 +80,14 @@ Similarly you can write more lines with file.writeline([[**code line goes here**
 
 I'll update this when I find a better way.
 
+___
+
 ### 6. Documentation of code in this repo
 
-The 
-The init.lua file listens for messages via UDP.
+udp_send.pde is a processing file that continuously sends UDP messages to a specified IP (sends numbers between 0 and 255 based on cursor's x position)
+
+init.lua file listens for messages via UDP and sends via serial (TX/RX) regardless of what the message is. This can be uploaded to the ESP8266 using section 5.
+
+ControlLED-example.ino receives messages via software serial, assumes that message is a number between 0 and 255, and sets the brightness of an LED according to that value.
+
+Serial_Receive.ino is the code that is used in Section 3.
