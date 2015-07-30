@@ -16,11 +16,11 @@ ___
 
 ### 1. ESP8266 pins and connections
 
-3.3V source -- VCC
-VCC -- 3.3k ohm resistor -- CH_PD
-GND -- GND
-TX -- RX on arduino / uart
-RX -- TX on arduino / uart (running at 3.3v)
+3.3V source -- VCC   
+VCC -- 3.3k ohm resistor -- CH_PD   
+GND -- GND   
+TX -- RX on arduino / uart    
+RX -- TX on arduino / uart (running at 3.3v)   
 
 ___
 
